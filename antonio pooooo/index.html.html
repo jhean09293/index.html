@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Love</title>
+  <style>
+    body {
+      background: #fff0f5;
+      font-family: 'Georgia', serif;
+      padding: 40px;
+      color: #4B2E2E;
+      overflow-x: hidden;
+    }
+    .letter {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      border: 2px solid #f7c8d0;
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      text-align: center;
+      color: #d6336c;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 18px;
+    }
+    .footer {
+      text-align: right;
+      margin-top: 40px;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    video {
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    /* Heart Animation */
+    .heart {
+      width: 20px;
+      height: 20px;
+      background: pink;
+      position: fixed;
+      top: 100%;
+      animation: float 5s infinite ease-in;
+      border-radius: 50%;
+      opacity: 0.7;
+      z-index: 1;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(-100vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    /* Roblox Photo Album */
+    .album {
+      margin-top: 50px;
+    }
+    .album h2 {
+      text-align: center;
+      color: #d6336c;
+      margin-bottom: 20px;
+    }
+    .album-photos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+    .album-photos img {
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid #f7c8d0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating Hearts -->
+  <div id="hearts"></div>
+
+  <div class="letter">
+    <h1>For my babbbyyyy</h1>
+    <p>Hey love,</p>
+
+    <p> I made this little website for you, just a small way to show how much you mean to me. I love you deeply, more than words can ever explain. You’re one of the most important parts of my life, and I honestly can’t imagine my days without you in them.
+
+I know I mess up sometimes, and I’m sorry for those moments when I act like an asshole. but please know this, I would never cheat on you, and I’d never do anything to ruin what we have. you deserve loyalty, honesty, and love and I promise to give you exactly that.
+
+I just hope you stay loyal too, especially since we’re in a long distance relationship. trust and communication mean everything to me, and I believe in us, no matter the distance.
+
+one day, I hope we can turn all our dreams into reality. I wanna see us both grow, succeed, and reach everything we've been working so hard for. And when that day comes, I hope it’s still you and me side by side, just like we always talked about.
+
+I love you always mwamwaaaa.</p>
+
+    <!-- Change the file name and extension if not .jpg -->
+    <img src="kiki.jfif" alt="Your beautiful photo">
+
+    <p>fav picture koo mehehe. supeerr pretttyy moo poo:> 🥺❤️</p>
+
+    <video controls>
+      <source src="okaypo.mp4" type="video/mp4">
+      Your browser does not support the video.
+    </video>
+
+    <p>I made this lil video for you kasi love kita, and why not diba? mwamwamwaaaaa</p>
+
+    <p>Thank you for being the light in my life, for every smile, every advice, every moment we share. you mean the world to me.</p>
+    <p>I love you always and foreverr.</p>
+	<p> You’re so beautiful, inside and out.
+	Your smile? It lights up everything.
+	Your eyes? They tell stories I’ll never get tired of looking into.
+	You don’t need to change a thing—you're already more than enough.
+	Please don’t ever compare yourself to anyone, 'cause no one else comes close to you in my eyes.
+	You’re unique, you’re stunning, and I’m lucky to call you mine.</p>
+    <div class="footer">
+      <p>— I miss you na:< ❤️</p>
+    </div>
+
+    <!-- Roblox Photo Album Section -->
+    <div class="album">
+      <h2>Our Roblox Moments:></h2>
+      <div class="album-photos">
+        <img src="12.jfif" alt="Roblox Moment 1">
+        <img src="13.jfif" alt="Roblox Moment 2">
+        <img src="14.jfif" alt="Roblox Moment 3">
+        <!-- Add more if you want -->
+      </div>
+    </div>
+  </div>
+
+<!-- Sweet Photo Gallery -->
+<h2 style="margin-top: 50px; color: #ff3399;">random things hahhahaha </h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px;">
+  <img src="mwa.jfif" alt="Memory 1" style="width: 30%; border-radius: 12px;">
+  <img src="photo2.jfif" alt="Memory 2" style="width: 30%; border-radius: 12px;">
+  <img src="photo3.jfif" alt="Memory 3" style="width: 30%; border-radius: 12px;">
+  <img src="photo4.jfif" alt="Memory 4" style="width: 30%; border-radius: 12px;">
+  <img src="photo5.jfif" alt="Memory 5" style="width: 30%; border-radius: 12px;">
+  <img src="photo6.jfif" alt="Memory 6" style="width: 30%; border-radius: 12px;">
+</div>
+
+ 
+  <!-- Heart animation script -->
+  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.background = `hsl(${Math.random() * 360}, 70%, 80%)`;
+      heart.style.animationDuration = 3 + Math.random() * 2 + "s";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 5000);
+    }
+    setInterval(createHeart, 300);
+  </script>
+</body>
+</html>
